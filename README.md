@@ -6,7 +6,7 @@ Prototipo académico: el banco, los revisores y las normas incluidas son fictici
 
 ## Iniciar
 
-Con Docker Desktop encendido, doble clic en `INICIAR_ATALAYA.bat` (carpeta superior). Abre http://localhost:8790. La clave de OpenAI se lee de `clases/.env` (variable `openai`) al iniciar. Los datos quedan en el volumen de Docker `atalaya-datos`; para partir de cero: `docker volume rm atalaya-datos`.
+Crea un archivo `.env` en esta carpeta con la línea `openai=tu-clave`. Con Docker Desktop encendido, doble clic en `INICIAR_ATALAYA.bat`. Abre http://localhost:8790. La clave de OpenAI se lee al iniciar. Los datos quedan en el volumen de Docker `atalaya-datos`; para partir de cero: `docker volume rm atalaya-datos`.
 
 Sin clave o al alcanzar el tope diario, sigue operando solo con reglas y deja la revisión semántica pendiente.
 
